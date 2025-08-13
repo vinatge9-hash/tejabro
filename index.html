@@ -1,0 +1,216 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Roast & Ritual - Coffee House</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Tailwind CDN config: custom coffee color
+      tailwind = window.tailwind || {};
+      window.tailwindConfig = {
+        theme: {
+          extend: {
+            colors: {
+              coffee: '#6B4226',
+              'coffee-dark': '#52301f',
+              'cream': '#F5EFE6'
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Roast & Ritual - a modern, full-width responsive coffee shop website." />
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-cream text-coffee font-sans" style="font-family: 'Poppins', sans-serif;">
+    <!-- Navigation -->
+    <header class="w-full max-w-none bg-white/60 backdrop-blur sticky top-0 z-50 shadow-sm">
+      <div class="w-full max-w-none flex items-center justify-between px-4 py-3 md:py-4">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-coffee to-coffee-dark flex items-center justify-center text-cream font-bold animate-pulse">R</div>
+          <div class="text-xl md:text-2xl font-semibold text-coffee">Roast & Ritual</div>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Contact</a>
+          <a href="#menu" class="bg-coffee text-cream px-4 py-2 rounded shadow hover:scale-105 transform transition">Menu</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="navToggle" aria-label="Toggle navigation" class="p-2 rounded-md bg-white border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">Menu</button>
+        </div>
+      </div>
+      <!-- Mobile nav -->
+      <div id="mobileNav" class="w-full max-w-none md:hidden px-4 pb-4 hidden">
+        <div class="flex flex-col gap-2">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="block py-2 px-3 rounded hover:bg-coffee/10">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="block py-2 px-3 rounded hover:bg-coffee/10">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="block py-2 px-3 rounded hover:bg-coffee/10">Contact</a>
+          <a href="#menu" class="block py-2 px-3 rounded hover:bg-coffee/10">Menu</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="w-full max-w-none relative">
+      <div class="w-full h-[60vh] md:h-[70vh] bg-cover bg-center" style="background-image: url('{{image: a warm, inviting coffee shop interior with barista pouring latte art, wooden counter, plants, natural light}}');"></div>
+      <div class="w-full max-w-none -mt-40 md:-mt-32 px-6">
+        <div class="w-full max-w-none bg-white/90 backdrop-blur rounded-lg shadow-lg p-6 md:p-10 mx-auto flex flex-col md:flex-row gap-6 items-center">
+          <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold text-coffee">Craft Coffee. Warm Moments.</h1>
+            <p class="mt-3 text-coffee/80">At Roast & Ritual we roast small batches and prepare drinks with care. Stop by for a morning espresso or an afternoon slow brew.</p>
+            <div class="mt-5 flex gap-3">
+              <a href="#menu" class="inline-block bg-coffee text-cream px-5 py-2 rounded shadow hover:scale-105 transition">Explore Menu</a>
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="inline-block border border-coffee px-5 py-2 rounded hover:bg-coffee hover:text-cream transition">Find Us</a>
+            </div>
+          </div>
+          <div class="flex-1 flex justify-center md:justify-end">
+            <img src="https://images.unsplash.com/photo-1523288926042-67186ad1ada0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxjbG9zZS11cCUyMG9mJTIwYSUyMGxhdHRlJTIwd2l0aCUyMGhlYXJ0JTIwbGF0dGUlMjBhcnQlMjBvbiUyMHdvb2RlbiUyMHRhYmxlfGVufDB8MHx8fDE3NTUxMDY1NzF8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Latte art" class="w-64 h-44 object-cover rounded-lg shadow-lg transform hover:scale-105 transition" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <main id="menu" class="w-full max-w-none px-4 py-12">
+      <div class="w-full max-w-none flex items-center justify-between mb-6">
+        <h2 class="text-2xl font-semibold text-coffee">Our Menu</h2>
+        <div class="flex gap-2">
+          <button data-filter="all" class="filterBtn bg-white border border-coffee text-coffee px-3 py-1 rounded hover:bg-coffee hover:text-cream transition">All</button>
+          <button data-filter="espresso" class="filterBtn bg-white border border-coffee text-coffee px-3 py-1 rounded hover:bg-coffee hover:text-cream transition">Espresso</button>
+          <button data-filter="cold" class="filterBtn bg-white border border-coffee text-coffee px-3 py-1 rounded hover:bg-coffee hover:text-cream transition">Cold Brew</button>
+          <button data-filter="pastry" class="filterBtn bg-white border border-coffee text-coffee px-3 py-1 rounded hover:bg-coffee hover:text-cream transition">Pastries</button>
+        </div>
+      </div>
+
+      <div id="menuGrid" class="w-full max-w-none grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="espresso">
+          <img src="https://images.unsplash.com/photo-1635809337847-cc5e79a3969c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxzaG90JTIwb2YlMjBhJTIwc2luZ2xlLW9yaWdpbiUyMGVzcHJlc3NvJTIwaW4lMjBhJTIwZGVtaXRhc3NlJTIwb24lMjBhJTIwd29vZGVuJTIwdHJheSUyMHdpdGglMjBiZWFucyUyMHNjYXR0ZXJlZHxlbnwwfDB8fHwxNzU1MTA2NTcxfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Single Origin Espresso" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Single-Origin Espresso</h3>
+          <p class="text-sm text-coffee/80 mt-1">Intense, bright, and syrupy. 18g dose pulled to perfection.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$3.50</div>
+            <div class="flex gap-2">
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="cold">
+          <img src="https://pixabay.com/get/gcd220ca30585a45b1451d925ac9312671e776617238cb6a1dfbdf64177c32c479b33a021dcd434e88b409b242913459b8d30026a201b167d11c03b0ad0a10ed2_640.jpg" alt="Cold Brew" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Nitro Cold Brew</h3>
+          <p class="text-sm text-coffee/80 mt-1">Smooth and effervescent — served chilled.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$4.50</div>
+            <div>
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="espresso">
+          <img src="https://images.pexels.com/photos/8936881/pexels-photo-8936881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cappuccino" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Cappuccino</h3>
+          <p class="text-sm text-coffee/80 mt-1">Classic balance of espresso, steamed milk, and foam.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$4.00</div>
+            <div>
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="pastry">
+          <img src="https://pixabay.com/get/geb6fb5be4b3368b839ab2327faaa61e51b146c7818deff8c9da193b15e8372f54e40666b84eb85f2afea93e8dbbfbf3aff4cce32930983236c1cdf439a4494b8_640.jpg" alt="Chocolate Croissant" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Chocolate Croissant</h3>
+          <p class="text-sm text-coffee/80 mt-1">Buttery layers with rich dark chocolate.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$3.25</div>
+            <div>
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="cold">
+          <img src="https://images.unsplash.com/photo-1518439532222-5dcc881e74b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHwxMHx8bWFzb24lMjBqYXIlMjBvZiUyMGNvbGQlMjBicmV3JTIwd2l0aCUyMG1pbnQlMjBnYXJuaXNoJTIwb24lMjBhJTIwc3VubGl0JTIwcGF0aW8lMjB0YWJsZXxlbnwwfDB8fHwxNzU1MTA2NTc0fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Iced Brew" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Iced Brew Lemon Twist</h3>
+          <p class="text-sm text-coffee/80 mt-1">Bright and refreshing with a hint of citrus.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$4.75</div>
+            <div>
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="menuCard p-4 bg-white rounded-lg shadow hover:shadow-lg transition transform hover:-translate-y-1" data-category="pastry">
+          <img src="https://images.pexels.com/photos/5710850/pexels-photo-5710850.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Blueberry Muffin" class="w-full h-44 object-cover rounded-md mb-3" />
+          <h3 class="text-lg font-semibold text-coffee">Blueberry Muffin</h3>
+          <p class="text-sm text-coffee/80 mt-1">Sweet, soft, and bakery-fresh every morning.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-coffee font-semibold">$2.75</div>
+            <div>
+              <button data-action="view" class="text-sm px-3 py-1 rounded border border-coffee text-coffee hover:bg-coffee hover:text-cream transition">View</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Quick About CTA -->
+      <div class="w-full max-w-none mt-12 bg-white rounded-lg p-6 shadow flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <h3 class="text-xl font-semibold text-coffee">A Few Steps to Better Coffee</h3>
+          <p class="text-coffee/80 mt-1">We roast, brew, and serve — while you enjoy. Learn about our journey and what makes our coffee special.</p>
+        </div>
+        <div class="flex gap-3">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="px-4 py-2 bg-coffee text-cream rounded hover:scale-105 transition">Our Story</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-4 py-2 border border-coffee rounded hover:bg-coffee hover:text-cream transition">Visit Us</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-none bg-coffee text-cream py-8 px-4 mt-12">
+      <div class="w-full max-w-none flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-9 h-9 rounded-full bg-cream text-coffee font-bold flex items-center justify-center">R</div>
+            <div class="font-semibold">Roast & Ritual</div>
+          </div>
+          <div class="text-cream/90 text-sm">Open daily 7am — 6pm | 123 Brew Lane, Coffee City</div>
+        </div>
+        <div class="flex gap-4">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-cream/90 hover:text-cream transition">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-cream/90 hover:text-cream transition">Contact</a>
+          <a href="#menu" class="text-cream/90 hover:text-cream transition">Menu</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal (hidden) -->
+    <div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+      <div class="bg-white rounded-lg overflow-hidden w-full max-w-2xl shadow-lg">
+        <div class="p-4 flex justify-between items-start">
+          <h4 id="modalTitle" class="text-lg font-semibold text-coffee"></h4>
+          <button id="modalClose" class="text-coffee/70 hover:text-coffee">Close</button>
+        </div>
+        <div id="modalContent" class="p-4 border-t border-coffee/10"></div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
