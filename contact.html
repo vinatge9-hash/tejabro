@@ -1,0 +1,81 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact - Roast & Ritual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.tailwindConfig = { theme: { extend: { colors: { coffee: '#6B4226', cream: '#F5EFE6' } } } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-cream text-coffee" style="font-family: 'Poppins', sans-serif;">
+    <header class="w-full max-w-none bg-white/60 backdrop-blur sticky top-0 z-40 shadow-sm">
+      <div class="w-full max-w-none flex items-center justify-between px-4 py-3">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-coffee to-coffee-dark flex items-center justify-center text-cream font-bold">R</div>
+          <div class="font-semibold">Roast & Ritual</div>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-full max-w-none px-4 py-12">
+      <section class="w-full max-w-none grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg p-6 shadow">
+          <h1 class="text-2xl font-semibold">Get in touch</h1>
+          <p class="text-coffee/80 mt-2">Questions, events, or wholesale inquiries — we'd love to hear from you.</p>
+          <form id="contactForm" class="mt-4 space-y-3" novalidate>
+            <div>
+              <label class="block text-sm">Name</label>
+              <input type="text" id="name" class="w-full border border-coffee/30 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-coffee/30" required />
+            </div>
+            <div>
+              <label class="block text-sm">Email</label>
+              <input type="email" id="email" class="w-full border border-coffee/30 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-coffee/30" required />
+            </div>
+            <div>
+              <label class="block text-sm">Message</label>
+              <textarea id="message" rows="4" class="w-full border border-coffee/30 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-coffee/30" required></textarea>
+            </div>
+            <div class="flex items-center gap-3">
+              <button type="submit" class="px-4 py-2 bg-coffee text-cream rounded hover:scale-105 transition">Send Message</button>
+              <div id="formMsg" class="text-sm"></div>
+            </div>
+          </form>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-semibold">Visit Us</h3>
+            <p class="text-coffee/80 mt-2">123 Brew Lane, Coffee City<br/>Open daily 7am — 6pm</p>
+            <div class="mt-3">
+              <img src="https://images.unsplash.com/photo-1588859959601-12d5ecb1b354?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw0fHxtYXAlMjB2aWV3JTIwd2l0aCUyMGElMjBtYXJrZXIlMjBuZWFyJTIwYSUyMHNtYWxsJTIwY29mZmVlJTIwc2hvcHxlbnwwfDB8fHwxNzU1MTA2NTgwfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Map" class="w-full h-48 object-cover rounded" />
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h3 class="font-semibold">Wholesale & Events</h3>
+            <p class="text-coffee/80 mt-2">Interested in partnering or hosting an event? Send us a message or email <a href="mailto:hello@roastandritual.example" class="text-coffee underline">hello@roastandritual.example</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full max-w-none bg-coffee text-cream py-6 px-4">
+      <div class="w-full max-w-none flex flex-col md:flex-row items-center justify-between">
+        <div class="font-semibold">Roast & Ritual</div>
+        <div class="text-sm">Follow us on social channels</div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
