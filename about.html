@@ -1,0 +1,128 @@
+<!--  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About - Roast & Ritual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+      window.tailwindConfig = {
+        theme: {
+          extend: {
+            colors: { coffee: '#6B4226', 'coffee-dark': '#52301f', cream: '#F5EFE6' }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif;" class="w-full max-w-none bg-cream text-coffee" style="font-family: 'Poppins', sans-serif;">
+    <header class="w-full max-w-none bg-white/60 backdrop-blur sticky top-0 z-40 shadow-sm">
+      <div class="w-full max-w-none flex items-center justify-between px-4 py-3">
+        <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-coffee to-coffee-dark flex items-center justify-center text-cream font-bold">R</div>
+          <div class="font-semibold">Roast & Ritual</div>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Home</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'about.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">About</a>
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="text-coffee hover:text-coffee-dark transition">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <a href="#" onclick="window.parent.handlePreviewNavigation(\'index.html\'); return false;" class="text-coffee">Home</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="w-full max-w-none px-4 py-12">
+      <section class="w-full max-w-none bg-white rounded-lg shadow p-6 md:p-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <h1 class="text-3xl font-bold">Our Story</h1>
+            <p class="mt-4 text-coffee/80">Roast & Ritual began as a neighborhood dream — a place where great beans meet simple rituals. We partner with ethical farms, roast in small batches, and train our baristas to treat every cup as a craft.</p>
+            <ul class="mt-4 space-y-2 text-coffee/80">
+              <li class="flex items-start gap-3"><span class="font-semibold text-coffee">Sourcing:</span> Direct relationships with farmers who share sustainable practices.</li>
+              <li class="flex items-start gap-3"><span class="font-semibold text-coffee">Roasting:</span> Small batch roasts tailored to highlight each origin.</li>
+              <li class="flex items-start gap-3"><span class="font-semibold text-coffee">Community:</span> Coffee that brings people together — from morning commuters to afternoon readers.</li>
+            </ul>
+            <div class="mt-6 flex gap-3">
+              <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-4 py-2 bg-coffee text-cream rounded hover:scale-105 transition">Visit Us</a>
+              <a href="./index.html#menu" class="px-4 py-2 border border-coffee rounded hover:bg-coffee hover:text-cream transition">See Menu</a>
+            </div>
+          </div>
+          <div class="w-full">
+            <img src="https://pixabay.com/get/gd4d95bbd6f1852006e5d24d6f70ca53b7ed3bca2430967d422a3f2daaf15ad1bc69ce9784c9f85858fa30b878938178910bd77cf0e1f7f32b426a35d8da67aac_640.jpg" alt="Coffee shop interior" class="w-full h-72 object-cover rounded-lg shadow-md" />
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full max-w-none mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://images.pexels.com/photos/6612725/pexels-photo-6612725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Barista" class="w-28 h-28 rounded-full mx-auto object-cover shadow mb-4" />
+          <h4 class="font-semibold">Our Team</h4>
+          <p class="text-sm text-coffee/80 mt-2">Skilled roasters and baristas who care about every step.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://images.pexels.com/photos/13830911/pexels-photo-13830911.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Roastery" class="w-28 h-28 rounded-full mx-auto object-cover shadow mb-4" />
+          <h4 class="font-semibold">Small Batch Roasting</h4>
+          <p class="text-sm text-coffee/80 mt-2">Fresh roasts tailored to highlight notes and sweetness.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow text-center">
+          <img src="https://images.pexels.com/photos/4920848/pexels-photo-4920848.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Community" class="w-28 h-28 rounded-full mx-auto object-cover shadow mb-4" />
+          <h4 class="font-semibold">Community Events</h4>
+          <p class="text-sm text-coffee/80 mt-2">Tastings, workshops, and local gatherings held monthly.</p>
+        </div>
+      </section>
+
+      <section class="w-full max-w-none mt-8 bg-white rounded-lg p-6 shadow">
+        <h3 class="text-xl font-semibold">Our Process</h3>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="p-4 border rounded">
+            <h4 class="font-semibold text-coffee">1. Source</h4>
+            <p class="text-sm text-coffee/80 mt-2">Direct and transparent relationships with growers.</p>
+          </div>
+          <div class="p-4 border rounded">
+            <h4 class="font-semibold text-coffee">2. Roast</h4>
+            <p class="text-sm text-coffee/80 mt-2">Small batches to bring out the best flavor profile.</p>
+          </div>
+          <div class="p-4 border rounded">
+            <h4 class="font-semibold text-coffee">3. Serve</h4>
+            <p class="text-sm text-coffee/80 mt-2">Perfectly brewed drinks and an inviting space.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full max-w-none mt-8 flex flex-col md:flex-row gap-6">
+        <div class="flex-1 bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold">Looking for wholesale?</h3>
+          <p class="text-coffee/80 mt-2">We partner with local cafes and shops. Reach out to discuss custom blends and roast profiles.</p>
+          <div class="mt-4">
+            <a href="#" onclick="window.parent.handlePreviewNavigation(\'contact.html\'); return false;" class="px-4 py-2 bg-coffee text-cream rounded hover:scale-105 transition">Wholesale Inquiry</a>
+          </div>
+        </div>
+        <div class="w-80 bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold">Hours & Location</h4>
+          <p class="text-coffee/80 mt-2">Mon — Sun: 7am — 6pm<br/>123 Brew Lane, Coffee City</p>
+          <img src="https://images.pexels.com/photos/6826026/pexels-photo-6826026.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Exterior" class="w-full h-36 object-cover rounded mt-3" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="w-full max-w-none bg-coffee text-cream py-6 px-4">
+      <div class="w-full max-w-none flex flex-col md:flex-row items-center justify-between">
+        <div class="font-semibold">Roast & Ritual</div>
+        <div class="text-sm">© <span id="year"></span> Roast & Ritual</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
